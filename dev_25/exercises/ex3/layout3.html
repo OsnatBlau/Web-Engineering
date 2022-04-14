@@ -8,36 +8,70 @@
     <title>Osnat Blau - Ex3</title>
 </head>
 <body>
-    <section id="dropHere">
-
-    </section>
-    <script>
-        
-    </script>
 <div id="wrapper_layout_3">
-    <header id="header_layout_3">
-        <a href="index.html" id="logo"></a>
-        <nav id="nav_layout_3">
-            <ul>
-                <li><a href="index.html">Layout 1</a></li>
-                <li><a href="layout2.html">Layout 2</a></li>
-                <li><a href="layout3.html" class="current-layout">Layout 3</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <aside id="aside_layout_3">
-    </aside>
+    <section id="first_section">
+        <ul>
+            <li>
+                <header id="header_layout_3">
+                    <a href="index.html" id="logo"></a>
+                    <img src="../ex3/images/plus.jpg" id="plus-image">
+                    <nav id="nav_layout_3">
+                        <ul>
+                            <li><a href="index.html">Layout 1</a></li>
+                            <li><a href="layout2.html">Layout 2</a></li>
+                            <li><a href="layout3.html" class="current-layout">Layout 3</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </li>
+            <li>
+                <aside id="aside_layout_3">
+                    <div class="div_1"></div>
+                    <div class="div_2"></div>
+                    <div class="div_3"></div>
+                    <div class="div_4"></div>
+                </aside>
+            </li>
+        </ul>
+    </section>
 
     <main id="main_layout_3">
-        <section class="flex_container_layout_3">
-            <div id="div_1"></div>
-            <div id="div_2"></div>
-            <div id="div_3"></div>
+        <section id="flex_container_layout_3">
+            <div class="div_1"></div>
+            <div class="div_2"></div>
+            <div class="div_3"></div>
+            <div class="div_4"></div>
+        </section>
+        <section id="flex_container_layout_3" class="left_container">
+            <div class="div_1"></div>
+            <div class="div_2"></div>
+            <div class="div_3"></div>
+            <div class="div_4"></div>
         </section>
     </main>
+    <main id="second_main_layout_3">
+        <section id="flex_container_layout_3">
+            <div class="div_1"></div>
+            <div class="div_2"></div>
+            <div class="div_3"></div>
+            <div class="div_4"></div>
+        </section>
+        <section id="flex_container_layout_3" class="left_container">
+            <div class="div_1"></div>
+            <div class="div_2"></div>
+            <div class="div_3"></div>
+            <div class="div_4"></div>
+        </section>
+    </main>
+    <script>
+        document.getElementById("plus-image").onclick = () => {
+            if (document.getElementById("second_main_layout_3").style.visibility=="hidden")
+                document.getElementById("second_main_layout_3").style.visibility = "visible";
+            else 
+                document.getElementById("second_main_layout_3").style.visibility = "hidden";
+        }
+    </script>
 </div>
-    
     <footer id="footer_layout_3">
     </footer>
 </body>
