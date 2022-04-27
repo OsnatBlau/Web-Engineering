@@ -17,10 +17,13 @@ a {
 li {
     list-style: none;
 }
+footer {
+    background-color: #2B4A61;
+}
 
 #wrapper {
     width: 100%;
-    min-height: 100vh;
+    min-height: 92.5vh;
     margin: auto;
     background-color: #6B90C8;
     border-color: #6B90C8;
@@ -122,7 +125,7 @@ header li a {
 
 /* MAIN TABLE */
 #main-table {
-    margin-top: 143px;
+    margin-top: 163px;
     border-spacing: 50px;
     align-items: center;
 }
@@ -278,4 +281,15 @@ header li a {
     width: 80px;
     height: 80px;
     margin-right: 140px;
+}
+
+#footer-social-icons-section img {
+    margin: 5px;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+}
+.end {
+    color: #FFFFFF;
 }
