@@ -5,25 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Mealy</title>
+    <title>Mealy - recipes list</title>
 </head>
 <body>
 <div id="wrapper">
     <header>
-        <nav id="mainMenu">
-            <a href="index.html"><span class="b">About us</span></a>
-            <a href="Articles.html"><span>Articles</span></a>
-            <a href="index.html" id="logo"></a>
-            <a href="index.html"><span>Races</span></a>
-            <a href="index.html"><span>Gallery</span></a>
-            <a href="index.html"><span>Contact us</span></a>
+        <nav>
+            <ul>
+                <li><a href="#" id="Hamburger"></a></li>
+                <li><a href="#" id="User"></a></li>
+                <li><a href="#" id="Cart"></a></li>
+                <li><a href="main.html" id="logo"></a></li>
+                <li><a href="#" id="Location"></a></li>
+                <li><a href="#" id="Recipes"></a></li>
+                <li><a href="#" id="Messages"></a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="title"></section>
+        <section id="title">We have found recipes for you!</section>
+        <a href="main.html" id="back"><img src="../dev_213/images/icon-back.png" title="Back" alt="Back"></a>
 
-        <section id="Examples">
+        <section>
+            <table id="recipes-table">
+                <tr>
+                    <td>
+                        <a href="aRecipe.html">
+                            <img src="images/Cucumber-Vinegar-Salad.jpg" title="recipe" alt="recipe">
+                            <span>Cucumber Salad with Vinegar</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <img src="images/Cucumber-Sandwich.jpg" title="recipe" alt="recipe">
+                            <span>Cucumber Sandwich</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" class="hide">
+                            <img src="images/Chicken-&-Broccoli-Casserole.jpg" title="recipe" alt="recipe">
+                            <span>Chicken & Broccoli Casserole</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">
+                            <img src="images/Carrot-Cake-Energy-Bites.jpg" title="recipe" alt="recipe">
+                            <span>Carrot Cake Energy Bites</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <img src="images/Spinach-Avocado-Smoothie.jpg" title="recipe" alt="recipe">
+                            <span>Spinach-Avocado Smoothie</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" class="hide">
+                            <img src="images/No-Cook-Black-Bean-Salad.jpg" title="recipe" alt="recipe">
+                            <span>No-Cook Black Bean Salad</span>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <section id="More">
+                <img src="images/icon-arrow.png" title="More" alt="More">
+            </section>
         </section>
     </main>
 </div>
