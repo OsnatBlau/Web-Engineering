@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login and Registration Mealy</title>
+    <link rel="logo icon" href="images/Logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">>
+    <link href="https://getbootstrap.com/docs/5.1/forms/range/#min-and-max" rel="stylesheet" id="class=details">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">
+                <img src="https://s3-alpha-sig.figma.com/img/751b/3991/f5c1090b10af4adfe9cb2c43af7ab2e8?Expires=1651449600&Signature=NhiziUffktLz59dVy~6nXZ0JiNduxYllodNUea5f8ghryEeSCOqJ05NTTisP33KiyIJToIpInPe4PFSPHHK7o4UfLeow8e413xBDqhKJh-6hUng6jVsAlK2O2yImWT8x4Xv3MEi0Cgl6JmfH~viBfEXVb3JiBPp4M9Y0~orWTgG7pk97VvvnWxbfQTt8sOojD8cxsyYALXzTn1tBR3MhhuyJYmBmnz15NSdxQDZ3GWqL91BCUrJPtfk4WzkeTkaNKp3rrmUqyFYCyVFObhfRaYrj0h7kdycJXJ7ojpXG4dcyHFoR6IGsO0JXzha8A~wAhFu3KBJBe-Ni6l9TBC9~RQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                    alt="" />
+            </div>
+            <div class="title signup">
+                Sign up
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Sign up</label>
+                <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+                <form action="main.html" class="login">
+                    <div class="field">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="password" pattern="[a-zA-Z0-9]{5}" placeholder="Password" required>
+                    </div>
+                    <div class="pass-link">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="signup-link">
+                        Not a member? <a href="">Signup now</a>
+                    </div>
+                </form>
+                <form action="main.html" class="signup">
+                    <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" pattern="[a-zA-Z0-9]{5}" placeholder="Password" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="password" pattern="[a-zA-Z0-9]{5}" placeholder="Confirm password"
+                            required>
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Signup">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (() => {
+            loginForm.style.marginLeft = "-50%";
+            loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (() => {
+            loginForm.style.marginLeft = "0%";
+            loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (() => {
+            signupBtn.click();
+            return false;
+        });
+    </script>
+</body>
+
+</html>
