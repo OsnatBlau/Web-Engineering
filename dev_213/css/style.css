@@ -1,8 +1,281 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header,  main, footer, nav, aside, section, div, table {
+header,  main, footer, nav, aside, section, div {
     display: block;
+}
+
+body {
+    font-family: cursive;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: #6B90C8;
+    border-color: #6B90C8;
+}
+@media screen and (min-width: 1000px) {
+    main {
+        margin-left: 25%;
+    }
+}
+
+/* NAVBAR STYLING */
+header {
+    background-color: #2B4A61;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 0 15px 0 black;
+}
+
+on-test.sticky-nav header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 0 9px;
+    margin-top: -20px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #2B4A61;
+    height: 60px;
+    width: 60px;
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+#logo {
+    background-image: url(../images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-flex;
+    margin-top: 20px;
+    background-size: 124%;
+}
+#Hamburger {
+    background-image: url(../images/icon-hamburger-menu.png);
+    height: 50px;
+    width: 50px;
+}
+#User {
+    background-image: url(../images/icon-user.png);
+    background-size: 90%;
+}
+#Cart {
+    background-image: url(../images/icon-cart.png);
+}
+#Location {
+    background-image: url(../images/icon-location.png);
+    background-size: 70%;
+}
+#Recipes {
+    background-image: url(../images/icon-recipes.png);
+    background-size: 85%;
+}
+#Messages {
+    background-image: url(../images/icon-message.png);
+}
+
+/* TITLES */
+#title {
+    position: sticky;
+    height: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 48px;
+    color: #FFFFFF;
+    top: 140px;
+}
+@media screen and (max-width: 1000px) {
+    #title {
+        font-size: 40px;
+        margin-left: 20%;
+    }
+}
+
+/* MAIN TABLE */
+#main-table {
+    margin-top: 143px;
+    border-spacing: 50px;
+    align-items: center;
+}
+#main-table td {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    width: 298px;
+    height: 206px;
+    margin: 20px;
+    font-size: 16px;
+    box-shadow: 20px 20px 20px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    line-height: 28px;
+}
+#main-table td:hover {
+    background-color: #a1c2f3;
+}
+#main-table span {
+    margin-left: 58px;
+    top: 44px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 150px;
+    text-align: center;
+    color: #258cdb;
+}
+#main-table img {
+    height: 90px;
+    width: 80px;
+    margin-left: 210px;
+}
+
+/* RECIPES TABLE */
+#recipes-table {
+    margin-top: 150px;
+    margin-left: -190px;
+    border-spacing: 57px 20px;
+    position:sticky;
+    align-items: center;
+}
+#recipes-table td {
+    width: 250px;
+    margin: 20px;
+    font-size: 16px;
+    position:sticky;
+    align-items: center;
+}
+#recipes-table td:hover {
+    opacity: 0.3;
+}
+#recipes-table img {
+    width: 250px;
+    height: 250px;
+    left: 80px;
+    top: 150px;
+    border-radius: 10px;
+}
+#recipes-table span {
+    width: 229px;
+    left: 709px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align-last: center;
+    text-align: center;
+    margin-left: 15%; 
+    color: white;
+}
+#More {
+    position: sticky;
+    align-items: center;
+    margin-left: 270px;
+}
+@media screen and (max-width: 1000px) {
+    .hide {
+        opacity: 0;
+        margin-left: -1000px;
+    }
+    #recipes-table {
+        margin-left: 22px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    #More {
+        opacity: 0;
+    }
+}
+
+/* THE RECIPE */
+#back img {
+    position: absolute;
+    left: 80px;
+    top: 135px;
+    width: 60px;
+    height: 60px;
+}
+
+#the-recipe-table {
+    margin-top: 180px;
+    margin-left: 60px;
+    border-spacing: 57px 20px;
+    position:sticky;
+}
+#the-recipe-table td {
+    width: 450px;
+    margin: 20px;
+    font-size: 16px;
+    position:absolute;
+}
+#the-recipe-table img {
+    width: 450px;
+    height:450px;
+    border-radius: 10px;
+}
+#instructions {
+    margin-left: 490px; 
+    margin-top: -450px;
+    margin-bottom: 200px;
+}
+.ingredients li{
+    list-style: disc;
+    margin-left: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+@media screen and (max-width: 1300px) {
+    #instructions {
+        margin-left: -1px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        width: 200px;
+        border-color: #6B90C8;
+    }
+}
+#the-recipe-table p {
+    width: 400px;
+    left: 709px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 10px;
+    background-color: #FFFFFF;
+}
+
+#comment {
+    margin-top: -200px;
+    margin-left: 70px;
+}
+#comment img {
+    width: 80px;
+    height: 80px;
+    margin-right: 140px;
 }
