@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/fullpage.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+::selection {
+    background: #ff80bf;
+
+}
+
+.container {
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container form .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+.container form .title:before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+
+.container form .input-box {
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.container form .input-box input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+
+.container form .underline::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+
+.container form .underline::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.container form .input-box input:focus~.underline::after,
+.container form .input-box input:valid~.underline::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.container form .button {
+    margin: 40px 0 20px 0;
+}
+
+.container .input-box input[type="submit"] {
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .input-box input[type="submit"]:hover {
+    letter-spacing: 1px;
+    background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+
+.container .option {
+    font-size: 14px;
+    text-align: center;
+}
+
+.container .facebook a,
+.container .twitter a {
+    display: block;
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    line-height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.container .facebook i,
+.container .twitter i {
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.container .twitter a {
+    background: linear-gradient(to right, #00acee 0%, #1abeff 100%);
+    margin: 20px 0 15px 0;
+}
+
+.container .twitter a:hover {
+    background: linear-gradient(to left, #00acee 0%, #1abeff 100%);
+    margin: 20px 0 15px 0;
+}
+
+.container .facebook a {
+    background: linear-gradient(to right, #3b5998 0%, #476bb8 100%);
+    margin: 20px 0 50px 0;
+}
+
+.container .facebook a:hover {
+    background: linear-gradient(to left, #3b5998 0%, #476bb8 100%);
+    margin: 20px 0 50px 0;
+}
+
+
+/************ layouts ************/
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+
+header,
+main,
+footer,
+nav,
+aside,
+section,
+div,
+article {
+    display: block;
+}
+
+header {
+    height: 85px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover,
+a.active:hover {
+    color: #f55454;
+}
+
+a img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    width: 55px;
+}
+
+nav {
+    width: 90%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.active {
+    color: #f5d654;
+}
+
+main {
+    background-color: #f2f2f2;
+}
+
+main h1 {
+    color: #f5d654;
+    font-size: 3.75rem;
+
+}
+
+#wrapper {
+    margin: auto;
+    width: 90%;
+}
+
+.jaune {
+    max-width: 420px;
+    background-color: #f5d654;
+    border-radius: 24px;
+}
+
+.bkgjaune {
+    background-color: #f5d654;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #333333;
+}
+
+/************ RECIPES ************/
+
+.salade {
+    width: 220px;
+    height: 220px;
+}
+
+.col-md-4,
+.col-md-8 {
+    width: 50%;
+}
+
+.card-body {
+    margin-top: 15%;
+}
+
+.rounded-start {
+    border-bottom-left-radius: 24px !important;
+    border-top-left-radius: 24px !important;
+}
+
+.card_recipe {
+    gap: 40px;
+}
+
+.taille {
+    width: 400px;
+    height: auto;
+}
+
+.bkgwhite {
+    background-color: white;
+    width: 35%;
+    height: 0%;
+    margin-top: 10%;
+    padding: 5%;
+    margin-left: 15%;
+    border-radius: 24px;
+}
+
+.saladetaille {
+    width: 500px;
+    height: auto;
+}
+
+.othertop {
+    margin-top: 10%;
+}
+
+/************ INDEX ************/
+
+.main_index {
+    padding-bottom: 5%;
+}
+
+.imgmealy {
+    width: 900px;
+    height: 355px;
+}
+
+/* .imgbatsal{
+    width: 500px;
+    height: 700px;
+} */
+
+.grd {
+    grid-template-columns: auto auto;
+    margin-top: 5%;
+    /* margin: auto; */
+    width: 90%;
+    margin-left: 10%;
+    display: grid
+}
+
+.cl1 {
+    /* margin-top: 40%; */
+    margin-right: 10%;
+}
+
+.cl1 p {
+    font-size: 20px;
+    line-height: 40px;
+    text-size-adjust: 100%;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .grd {
+        display: block;
+    }
+}
+
+.rnd {
+    height: 100px;
+    width: 100px;
+    background-color: #f5d654;
+    border-radius: 50%;
+}
+
+.rnd i {
+    font-size: 50px;
+}
+
+.rnd img {
+    width: 50px;
+}
+
+.blcbcg {
+    background-color: white;
+    width: 30vh;
+    height: 30vh;
+}
+
+.gp {
+    gap: 40px;
+    padding-top: 2%;
+    margin: 0 5%
+}
+
+.bkgjaune.index {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+
+@media screen and (max-width: 1300px) {
+    .bkgjaune.index {
+        display: block;
+        padding-left: 10%;
+        margin: 0;
+    }
+}
+
+/************ FORM ************/
+
+
+.formmain {
+    font-size: 0.5rem;
+    padding: 5%;
+}
+
+.whterec {
+    background-color: white;
+    width: 60%;
+    margin-left: 20%;
+    /* padding-top: 5%; */
+    /* padding-left: 5%; */
+    padding-right: 5%;
+    align-items: center;
+
+}
+
+#form-head {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+form {
+    margin: 8% 0;
+    font-size: 0.75rem;
+}
+
+.whterec div {
+    margin-left: 10%;
+}
+
+.button {
+    background-color: #f5d654;
+    border-radius: 10px;
+    padding: 2%;
+    margin-left: 30%;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+
+}
+
+.button:hover {
+    background-color: green;
+}
+
+#successMessage {
+    opacity: 0;
+    font-size: 16px;
+    color: green;
+}
+
+/************ A RECIPE ************/
+#the-recipe h2 {
+    color: #f5d654;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#the-recipe h3 {
+    color: white;
+    padding: 10px;
+}
+
+#the-recipe img {
+    width: 400px;
+    height: auto;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+#instructions {
+    margin-left: 550px;
+    margin-top: -420px;
+    width: 450px;
+    background-color: #f5d654;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.ingredients li {
+    margin-left: 30px;
+    line-height: 30px;
+    width: 400px;
+}
+
+@media screen and (max-width: 1000px) {
+    #instructions {
+        margin-left: -1px;
+        margin: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+#the-recipe p {
+    width: 400px;
+    left: 709px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 30px;
+}
+
+
+/************ LIST ************/
+
+.bkgimg {
+    background-image: url("../images/bakground.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 425px;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+}
+
+.listmain {
+    padding: 5%;
+}
+
+.table-responsive {
+    margin-top: 10%;
+}
+
+thead {
+    background-color: #f5d654;
+}
