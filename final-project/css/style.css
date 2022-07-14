@@ -212,6 +212,10 @@ ul {
     list-style-type: none;
 }
 
+li {
+    margin-left: 1rem;
+}
+
 .active {
     color: #f5d654;
 }
