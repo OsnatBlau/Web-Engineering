@@ -1,0 +1,40 @@
+{
+    "dev_213_item": [
+            {
+                "id_item": 1,
+                "item_name": "Apple",
+                "Amount": 3,
+                "Expriy_date": "16-7-2022"
+            },
+            {
+                "id_item": 2,
+                "item_name": "Tomato",
+                "Amount": 2,
+                "Expriy_date": "16-7-2022"
+            },
+            {
+                "id_item": 3,
+                "item_name": "Cucumber",
+                "Amount": 3,
+                "Expriy_date": "16-7-2022"
+            },
+            {
+                "id_item": 4,
+                "item_name": "Yellow cheese",
+                "Amount": 1,
+                "Expriy_date": "16-7-2022"
+            },
+            {
+                "id_item": 5,
+                "item_name": "milk",
+                "Amount": 1,
+                "Expriy_date": "17-7-2022"
+            },
+            {
+                "id_item": 6,
+                "item_name": "Butter",
+                "Amount": 1,
+                "Expriy_date": "18-07-2022"
+            }
+        ]
+}

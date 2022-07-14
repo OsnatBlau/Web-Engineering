@@ -1,0 +1,32 @@
+{
+    "dev_213_recipes": [
+            {
+                "id_recipe": 1,
+                "recipe_name": "Pizza",
+                "contanies": ["Lactose", "Gluten"],
+                "timeMIN": 25,
+                "component_name": ["Tomatoes", "cheese", "dough", "basil", "salt and pepper","Eggs", "water"]
+            },
+            {
+                "id_recipe": 2,
+                "recipe_name": "Hamburger",
+                "contanies": ["Gluten", "meat"],
+                "timeMIN": 20,
+                "component_name": ["Meat", "hamburger bun", "lettuce and tomato","Eggs", "water"]
+            },
+            {
+                "id_recipe": 3,
+                "recipe_name": "Vegetable Salad",
+                "contanies": [ ],
+                "timeMIN": 10,
+                "component_name": ["Cucumber", "tomato", "lettuce", "onion", "lemon", "salt and pepper"]
+            },
+            {
+                "id_recipe": 4,
+                "recipe_name": "Pasta",
+                "contanies": ["Lactose", "Gluten"],
+                "timeMIN": 25,
+                "component_name": ["Pasta noodles", "tomato", "cream and oregano","Eggs", "water"]
+            }
+        ]
+}
